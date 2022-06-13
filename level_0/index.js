@@ -24,7 +24,7 @@ const cheat = (smolArr, myBrowser) => {
   return Promise.all(smolArr.map(async () => {
     const page = await myBrowser.newPage() // open an empty page
     await page.goto('http://158.69.76.135/level0.php') // goto the desired URL
-    await page.type('body > form > input[type=text]:nth-child(1)', '652') // write my id in the field
+    await page.type('body > form > input[type=text]:nth-child(1)', '0122') // write my id in the field
     await page.click('body > form > input[type=submit]:nth-child(2)') // click on 'submit' button
     await page.close()
   }))
@@ -35,7 +35,7 @@ const cheatSeq = async (smolArr, myBrowser) => {
   for (elem of smolArr) {
     const page = await myBrowser.newPage() // open an empty page
     await page.goto('http://158.69.76.135/level0.php') // goto the desired URL
-    await page.type('body > form > input[type=text]:nth-child(1)', '652') // write my id in the field
+    await page.type('body > form > input[type=text]:nth-child(1)', '0122') // write my id in the field
     await page.click('body > form > input[type=submit]:nth-child(2)') // click on 'submit' button
     await page.close()
   }
